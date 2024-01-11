@@ -171,6 +171,6 @@ function submitForm() {
       setTimeout(function () {
         document.getElementById("submit").disabled = false;
         document.getElementById("submit").innerText = "Submit";
-      }, 8000);
+      }, 6000);
     });
 }
