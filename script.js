@@ -136,4 +136,3 @@ function populateStates() {
 document.getElementById("signupForm").addEventListener("submit", submitForm);
 
 // Populate states on page load
-window.onload = populateStates;
