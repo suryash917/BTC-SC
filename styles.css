@@ -1,5 +1,19 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  text-align: center;
+  margin: 20px 0;
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+}
+
+header h1 {
+  margin-top: 10px;
 }
 
 form {
@@ -19,15 +33,6 @@ button {
   padding: 8px;
   margin-bottom: 10px;
   box-sizing: border-box;
-}
-
-#center-address-group {
-  margin-bottom: 10px;
-}
-
-.radio-option {
-  display: block;
-  margin-bottom: 5px;
 }
 
 button {

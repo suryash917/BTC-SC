@@ -1,52 +1,40 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup Form</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="en">
 
-    <form id="signupForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-      <label for="phone">Phone:</label>
-      <input type="tel" id="phone" name="phone" required>
+<body>
 
-      <label for="state">State:</label>
-      <select id="state" name="state" onchange="populateCities()" required></select>
+  <header>
+    <img src="src/blc_ravamp_banner_logo.png" alt="Logo" width="20%">
+    <h1>Byjus Science Carnival</h1>
+  </header>
 
-      <label for="city">City:</label>
-      <select id="city" name="city" onchange="populateAddresses()" required></select>
+  <form id="signupForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
 
-      <div id="center-address-group">
-        <label for="center-address">Center Address:</label>
-      </div>
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
 
-      <button type="submit">Submit</button>
-    </form>
+    <label for="state">State:</label>
+    <select id="state" name="state" onchange="populateCities()" required></select>
 
-    <script src="script.js"></script>
-  </body>
+    <label for="city">City:</label>
+    <select id="city" name="city" onchange="populateAddresses()" required></select>
 
-  <script>
-    function submitForm() {
-      var form = document.getElementById("signupForm");
-      var formData = new FormData(form);
-  
-      fetch('https://script.google.com/macros/s/AKfycbzqsY0T8hx6MIe8RRLf78-2xJhDPg_qI1wZHJWD9VrBDTYwKcCnRbghYDV-PmDrEKVfng/exec
-', {
-        method: 'POST',
-        body: formData
-      })
-      .then(response => response.text())
-      .then(data => {
-        console.log(data); // Log the server response
-        alert('Form submitted successfully');
-      })
-      .catch(error => console.error('Error:', error));
-    }
-  </script>
-  </html>
+    <label for="center">Center Address:</label>
+    <select id="center" name="center" required></select>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
