@@ -95,7 +95,7 @@ function submitForm(event) {
   };
 
   // Add your fetch request here
-  fetch('https://script.google.com/macros/s/AKfycbzqsY0T8hx6MIe8RRLf78-2xJhDPg_qI1wZHJWD9VrBDTYwKcCnRbghYDV-PmDrEKVfng/exec', {
+  fetch('https://script.google.com/macros/s/AKfycbzlYonWsZ3L-pCCXM6vrgFYzO97z4YJRySqrZf4hgFsfZIskXGZherBWW5yvnjKj_Ri-A/exec', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
