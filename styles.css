@@ -149,7 +149,7 @@ button:hover {
   align-items: center;
 
   background: linear-gradient(to bottom, #af3fb9, #823589);
-  max-width: 95%;
+  max-width: 1280px;
   border-radius: 18px;
 }
 
