@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="main-container">
+    <div class="desktop-layout">
+      <div class="form-img-container">
+      <div class="image-container">
+        <!-- Add your image here -->
+        <img src="jane-jax.webp" alt="Your Image" class="avatar">
+      </div>
+      <div class="form-container">
+        <form id="signupForm">
+          <h1>Enrollment Form</h1>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your name" pattern="[A-Za-z ]+" title="Please enter a valid name (only alphabetical characters)" autocomplete="name" required>      
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Your phone" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Your email" autocomplete="email" required>
+          <label for="state">State:</label>
+          <select id="state" name="state" placeholder="Your state" onchange="populateCities()" required></select>
+          <label for="city">City:</label>
+          <select id="city" name="city" onchange="populateAddresses()" required></select>
+          <label for="centre">Centre Address:</label>
+          <select id="centre" name="centre" required></select>
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    </div>
+
+    <div class="mobile-layout">
+      <div class="logo-container">
+        <br>
+        <img src="btc-logo.png" alt="BTC Logo" class="logo" id="btc-logo">
+        <img src="sc-logo.webp" alt="SC Logo" class="logo" id="sc-logo">
+      </div>
+      <form id="signupForm" class="mobile-form">
+        <h1>Enrollment Form</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" pattern="[A-Za-z ]+" title="Please enter a valid name (only alphabetical characters)" autocomplete="name" required>      
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your phone" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email" autocomplete="email" required>
+        <label for="state">State:</label>
+        <select id="state" name="state" placeholder="Your state" onchange="populateCities()" required></select>
+        <label for="city">City:</label>
+        <select id="city" name="city" onchange="populateAddresses()" required></select>
+        <label for="centre">Centre Address:</label>
+        <select id="centre" name="centre" required></select>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
