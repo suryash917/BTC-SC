@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+        <img src="btc-logo.png" alt="BTC Logo" class="logo" id="btc-logo">
+        <img src="sc-logo.webp" alt="SC Logo" class="logo" id="sc-logo">
+    </div>
+    
+  </header>
+  <form id="signupForm">
+    <h1>Enrollment Form</h1>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required>
+  
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Your phone" autocomplete="tel" required>
+  
+    <label for="state">State:</label>
+    <select id="state" name="state" placeholder="Your state" onchange="populateCities()" required autocomplete="address-level1"></select>
+  
+    <label for="city">City:</label>
+    <select id="city" name="city" onchange="populateAddresses()" required autocomplete="address-level2"></select>
+  
+    <label for="centre">Centre Address:</label>
+    <select id="centre" name="centre" required autocomplete="off"></select>
+  
+    <button type="submit" id="submit">Submit</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
